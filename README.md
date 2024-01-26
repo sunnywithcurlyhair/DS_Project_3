@@ -1,15 +1,24 @@
 # Project_3
 
 ## Overview
-This project uses exploratory data analysis to generate insights for a business stakeholder in the likelihood of someone defaulting on a loan.
+This project uses exploratory data analysis and builds supervised machine learning models to predict the loan default status based on characteristics associated with the loan.
 
 ## Business Understanding
-My company is working to gather insights into the business of home loans for both commercial and residential investors.
+My company is working for the bank to gather insights into the business of home loans for both commercial and residential investors.
 The purpose of this, is to ascertain what features make someone more or less likely to default on a loan, and what those parameters are.
 First, we began with importing the "Loan Default" dataset from Kaggle, then cleaned the data by sorting through the relevant columns and dropping the "NaN" values where appropriate.
+After cleaning the data, we ran various plots in order to find patterns within the data.
+Once completed, we ran various Logistic Regression models in order to make effective predictions, and give recommendations based on our results.
 
 ## Data Understanding and Analysis
-The data for this project was taken from Kaggle, and has been linked below. The data for this project has been cleaned, and is tbd what exactly was used in the final analysis.
+The data for this project was taken from Kaggle, and has been linked below.
 - https://www.kaggle.com/datasets/yasserh/loan-default-dataset/data
+
+The data for this project has been cleaned and sorted for the final analysis.
+Many tools were used in this process of analysis, including but not limited to pandas, seaborn, sklearn, etc.
+After cleaning the data, we set our target variable to "Status" as its values are binary (0 or 1) where 0 means Non-Default, and 1 means Default.
+With this set as our target variable, we looked at pairplots using seaborn, where the various plots were hued on "Status".
+In doing so, we noticed a correlation in the "LTV" (Loan to Value), "DTIR" (Debt to Income Ratio), "Income", "Loan Amount", "Lump-sum Payment", "Negative Amortization", and "Business or Commerical" columns.
+Next, we ran several models, including Logistic Regression, Decision Tree, and K-Nearest Neighbor models while maximizing our recall score.
 
 ## Conclusion
