@@ -38,4 +38,4 @@ After running several models, we:
 ## Conclusion
 By the end of the process, the Decision Tree was our most effective model, with a test set recall score of 0.65 and a tree depth set to 4.
 The key features with highest importance were "dtir1", "income", "LTV", "Neg_ammortization", "lump_sum_payment", and "business_or_commercial".
-To improve this model further...
+To improve this model further, we would require more default data from various years to improve accuracy and precision.
