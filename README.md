@@ -1,4 +1,4 @@
-# Project_3
+# Loan Default Analysis
 
 ## Overview
 This project uses exploratory data analysis and builds supervised machine learning models to predict the housing loan default status based on characteristics associated with the loan.
